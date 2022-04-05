@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Title</title>
+</head>
+
+<body>
+
+    <!-- Quiero que cree un juego simple de adivinar el tipo de números. Debe elegir un número aleatorio entre 1 y 100, luego desafiar al jugador a adivinar el número en 10 turnos. Después de cada turno, se le debe decir al jugador si tiene razón o no, y si está equivocado, si la suposición fue demasiado baja o demasiado alta. También debe decirle al jugador qué números adivinó previamente. El juego terminará una vez que el jugador adivine correctamente, o una vez que se acaben los turnos. Cuando el juego termina, el jugador debe tener la opción de comenzar a jugar nuevamente. -->
+
+
+    <!-- Al mirar este resumen, lo primero que podemos hacer es comenzar a dividirlo en tareas simples y procesables, con la mayor mentalidad de programador posible:
+
+Genere un número aleatorio entre 1 y 100.
+Registre el número de turno en el que está el jugador. Empiece en 1.
+Proporcione al jugador una forma de adivinar cuál es el número.
+Una vez que se ha enviado una suposición, primero regístrela en algún lugar para que el usuario pueda ver sus suposiciones anteriores.
+A continuación, compruebe si es el número correcto.
+Si es correcto:
+Mostrar mensaje de felicitaciones.
+Evite que el jugador pueda ingresar más conjeturas (esto estropearía el juego).
+Control de pantalla que permite al jugador reiniciar el juego.
+Si está mal y el jugador tiene giros restantes:
+Dígale al jugador que está equivocado y si su suposición fue demasiado alta o demasiado baja.
+Permítales ingresar otra suposición.
+Incrementa el número de turno en 1.
+Si está mal y al jugador no le quedan turnos:
+Dile al jugador que se acabó el juego.
+Evite que el jugador pueda ingresar más conjeturas (esto estropearía el juego).
+Control de pantalla que permite al jugador reiniciar el juego.
+Una vez que el juego se reinicia, asegúrate de que la lógica del juego y la interfaz de usuario se restablezcan por completo, luego vuelve al paso 1.
+Avancemos ahora, viendo cómo podemos convertir estos pasos en código, construyendo el ejemplo y explorando las características de JavaScript a medida que avanzamos. -->
+
+
+
+    <h1>Number guessing game</h1>
+
+    <p>Hemos seleccionado un número aleatorio entre 1 y 100. Vea si puede adivinarlo en 10 turnos o menos. Le diremos si su estimación fue demasiado alta o demasiado baja.</p>
+
+
+    <div class="form">
+        <label for="guessField">Ingrese  su numero </label>
+        <input type="text" id="guessField" class="guessField">
+        <label for="boton"></label>
+        <input id="boton" type="submit" value="Enviar Adivinanza" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
