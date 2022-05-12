@@ -1,5 +1,6 @@
-/*👉https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Details_of_the_Object_Model#creacion_de_la_jerarquia👈*/
 
+
+//!  https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Details_of_the_Object_Model#creacion_de_la_jerarquia
 
 
 /* El resto de este capitulo utiliza la jerarquía employee que se muestra en la siguiente figura.*/

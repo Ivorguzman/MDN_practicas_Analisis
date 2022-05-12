@@ -1,3 +1,4 @@
+// * https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Function/call
 
 //! Function.prototype.call()
 

@@ -1,10 +1,11 @@
 
-/* NOTA: PARA PROFUNDISAR EN EL ESTUDIO DE DESTRUCTURACION HACERLO EN:
-https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment */
+//* NOTA: PARA PROFUNDISAR EN EL ESTUDIO DE DESTRUCTURACION HACERLO EN:
 
+//! https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment 
 
-/* La desestructuración
-La sintaxis de desestructuración es una expresión de JavaScript que permite desempacar valores de arreglos o propiedades de objetos en distintas variables. */
+//* La desestructuración
+
+//? La sintaxis de desestructuración es una expresión de JavaScript que permite desempacar valores de arreglos o propiedades de objetos en distintas variables. 
 
 
 

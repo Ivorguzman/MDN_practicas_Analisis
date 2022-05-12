@@ -1,5 +1,6 @@
 
-/*👉https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Arrays👈*/
+
+//! https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Arrays
 {
     //    === Pruebas Practicas===
     // the global variable
