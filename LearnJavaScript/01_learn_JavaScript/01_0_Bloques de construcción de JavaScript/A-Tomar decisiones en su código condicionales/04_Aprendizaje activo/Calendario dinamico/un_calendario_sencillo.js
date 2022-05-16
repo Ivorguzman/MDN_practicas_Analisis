@@ -51,3 +51,72 @@
 //     createCalendar(31, 'January');
 // }
 👈*/
+
+//* El evento ==> .onchange <== se produce cuando el valor de un elemento se ha cambiado.
+// Para botones de radio y casillas de verificación, el evento onchange ocurre cuando el estado de activación se ha cambiado.
+
+// Consejo: Este evento es similar a la oninput evento. La diferencia es que el evento oninput se produce inmediatamente después de que el valor de un elemento ha cambiado, mientras que onchange ocurre cuando el elemento pierde el foco, después de que el contenido se ha cambiado. La otra diferencia es que el evento onchange también trabaja en <keygen> y <select> elementos.
+
+
+//* element.innerHTML
+// La propiedad Element.innerHTML devuelve o establece la sintaxis HTML describiendo los descendientes del elemento.
+
+// Al establecerse se reemplaza la sintaxis HTML del elemento por la nueva.
+
+//? Sintaxis
+// const content = element.innerHTML;
+
+// element.innerHTML = htmlString;
+
+//* Document.createElement()
+// En un documento HTML, el método Document.createElement() crea un elemento HTML especificado por su tagName
+
+
+
+const d = document;
+const select = d.querySelector('select');
+const h1 = d.querySelector('h1');
+const ul = d.querySelector('ul'); //list
+
+select.addEventListener('change', () => {
+    const seleccion = select.value; // choice
+    let dias = 31;
+    switch (seleccion) {
+        case 'Febrero':
+            dias = 28;
+            // console.log(dias);
+            break;
+        case 'Abril':
+        case 'junio':
+        case 'Septiembre':
+        case 'Nobiembre':
+            dias = 30;
+            // console.log(dias);
+        }
+        crearCalendario(dias, seleccion)
+});
+
+function crearCalendario(dias, seleccion) {
+    console.log(dias, seleccion)
+    ul.innerHTML = '';
+    h1.textContent = seleccion;
+    for (let i = 1; i <= dias; i++){
+        const diasCalenario = d.createElement('li'); //listItem 
+        diasCalenario.textContent = i;
+        ul.appendChild(diasCalenario);
+    }
+
+}
+
+// {
+//     for (let i = 1; i <= days; i++) {
+//         const listItem = document.createElement('li');
+//         listItem.textContent = i;
+//         list.appendChild(listItem);
+//       }
+// }
+
+
+
+
+
