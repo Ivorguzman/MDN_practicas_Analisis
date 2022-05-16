@@ -18,22 +18,6 @@
 
 }
 
-{
-
-    // const d = document;
-    // const select = d.querySelector('select');
-    // const html = d.querySelector('html');
-    // d.body.style.padding = '60px';
-
-    // function colorTema(colorFondo, colorTexto) {
-    //     html.style.backgroundColor = colorFondo;
-    //     html.style.color = colorTexto;
-
-    // }
-    // select.addEventListener('change', () => (select.value === 'negro') ? colorTema('black', 'white') : colorTema('white', 'black'));
-
-}
-
 
 
 
