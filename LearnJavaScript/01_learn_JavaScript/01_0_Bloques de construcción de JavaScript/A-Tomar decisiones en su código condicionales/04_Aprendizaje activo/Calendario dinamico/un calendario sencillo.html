@@ -6,82 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>My Title</title>
-    <style>
-        main {
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            border: 1px solid black;
-            padding-top: 1rem;
-        }
-        .meses__year{
-            margin-left: .5rem;
-        }
 
-        .mes__titulo {
-            background-color: #4e7a87;
-            color: #fff;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .mes__titulo h1 {
-            text-align: center;
-            font-size: 2em;
-            margin-top: 50px;
-            margin-bottom: 0;
-        }
-
-        .ul__calendario {
-            margin-top: .5rem;
-            margin-left: 3rem;
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-
-        }
-
-        .li__dias {
-            width: 100px;
-            height: 50px;
-            color: white;
-            background-color: #00bcd4;
-            text-align: center;
-            line-height: -5px;
-            font-size: 20px;
-            cursor: pointer;
-            margin: 1px;
-            padding: 0;
-            border-radius: 5px;
-            border: 1px solid #4e7a87;
-
-        }
-    </style>
 </head>
 
 <body>
     <main>
 
-        <select class="meses__year" name="" id="">
-            <option value="">Sleccione mes</option>
-            <option value="Enero">Enero</option>
-            <option value="Febrero">Febrero</option>
-            <option value="Marzo">Marzo</option>
-            <option value="Abril">Abril</option>
-            <option value="">5</option>
-            <option value="">6</option>
-            <option value="">7</option>
-            <option value="">8</option>
-            <option value="">9</option>
-            <option value="">10</option>
-            <option value="">11</option>
-            <option value="">12</option>
+        <select class="meses__year" name="" id="calendario">
+            <option id="meses" value="&nbsp">-- Mes --</option>
+            <option id="meses" value="Enero">Enero</option>
+            <option id="meses" value="Febrero">Febrero</option>
+            <option id="meses" value="Marzo">Marzo</option>
+            <option id="meses" value="Abril">Abril</option>
+            <option id="meses" value="Mayo">Mayo</option>
+            <option id="meses" value="Junio">Junio</option>
+            <option id="meses" value="Julio">Julio</option>
+            <option id="meses" value="Agosto">Agosto</option>
+            <option id="meses" value="Septiembre">Septiembre</option>
+            <option id="meses" value="Octubre">Octubre</option>
+            <option id="meses" value="Noviembre">Noviembre</option>
+            <option id="meses" value="Diciembre">Diciembre</option>
         </select>
         <div class="mes__titulo">
-            <h1>Enero</h1>
+            <h1></h1>
         </div>
 
-        <ul class="ul__calendario">
+
+        <ul id="ul" class="ul__calendario"></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <ul class="ul__calendario">
             <li class="li__dias">1</li>
             <li class="li__dias">2</li>
             <li class="li__dias">3</li>
@@ -113,7 +110,7 @@
             <li class="li__dias">29</li>
             <li class="li__dias">30</li>
             <li class="li__dias">31</li>
-        </ul>
+        </ul> -->
 
 
 
