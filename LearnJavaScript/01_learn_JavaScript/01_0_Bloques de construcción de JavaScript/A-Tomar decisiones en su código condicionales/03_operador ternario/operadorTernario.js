@@ -4,17 +4,17 @@
 {
 
     const d = document;
-    const select = d.querySelector('select');
-    const html = d.querySelector('html');
+    const $select = d.querySelector('select');
+    const $html = d.querySelector('html');
     d.body.style.padding = '60px';
 
     function colorTema(colorFondo, colorTexto) {
-        html.style.backgroundColor = colorFondo;
-        html.style.color = colorTexto;
+        $html.style.backgroundColor = colorFondo;
+        $html.style.color = colorTexto;
 
 
     }
-    select.addEventListener('change', () => (select.value === 'negro') ? colorTema('#2F4F4F', '') : colorTema('white', ''));
+    $select.addEventListener('change', () => ($select.value === 'negro') ? colorTema('#2F4F4F', '') : colorTema('white', ''));
 
 }
 
