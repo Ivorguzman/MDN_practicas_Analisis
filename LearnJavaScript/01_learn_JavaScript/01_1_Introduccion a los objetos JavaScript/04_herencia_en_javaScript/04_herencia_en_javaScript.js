@@ -19,23 +19,40 @@
         console.log(this);
         console.log('¡Hola! soy ' + this.nombre.nombrePila + '.');
     };
+
     Persona.prototype.despedida = function () {
         console.log(`${this.nombre.nombrePila} a dejado el edificio. ¡Adiós por ahora!`);
     };
 
+
+    console.log("--juan--");
+    let juan = new Persona('Juan', 'Perez', 25, 'masculino', ['cine', 'tecnología', 'música', 'Historia Religiosa']);
+    console.log(juan.nombre.nombrePila);
+    console.log(juan.nombre.apellido);
+    console.log(juan.edad);
+    console.log(juan.genero);
+    juan.saludo();
+    juan.despedida();
+
+    console.log("--maria--");
+    let maria = new Persona('Maria', 'Hurtado', 22, 'femenino', ['cine', 'teologia', 'trotar', 'Historia Religiosa']);
+    console.log(maria.nombre.nombrePila);
+    console.log(maria.nombre.apellido);
+    console.log(maria.edad);
+    console.log(maria.genero);
+    maria.saludo();
+    maria.despedida();
+
+
     ///"---Profesor-----"
+
     function Profesor(nombrePila, apellido, edad, genero, intereses, materia) {
         console.log(this);
         this.materia = materia;
-        Persona.call(this, nombrePila, apellido, edad, genero, intereses);// Aqui se atasca el serrucho
+        Persona.call(this, nombrePila, apellido, edad, genero, intereses);/// Aqui se atasca el serrucho (call)
     }
     Profesor.prototype = Object.create(Persona.prototype);
     Profesor.prototype.constructor = Profesor;
-
-    let Juan = new Persona('Juan', 'Perez', 25, 'masculino', ['cine', 'tecnología', 'música'], 'Matemáticas');
-
-    let Maria = new Persona('Maria', 'Hurtado', 22, 'femenino', ['cine', 'teologia', 'trotar'], 'Historia Religiosa');
-
 
     Profesor.prototype.saludo = function () {
         console.log(this);
@@ -59,27 +76,27 @@
 
     let profesor1 = new Profesor('Juan', 'Perez', 25, 'masculino', ['cine', 'tecnología', 'música'], 'Matemáticas');
 
-    profesor1.saludo();
-    console.log(profesor1 instanceof Profesor);
-    console.log(profesor1.nombre.nombrePila);
-    console.log(profesor1.nombre.apellido);
-    console.log(profesor1.edad);
-    console.log(profesor1.genero);
-    console.log(profesor1.intereses);
-    console.log(profesor1.materia);
-    profesor1.despedida();
+    // profesor1.saludo();
+    // console.log(profesor1 instanceof Profesor);
+    // console.log(profesor1.nombre.nombrePila);
+    // console.log(profesor1.nombre.apellido);
+    // console.log(profesor1.edad);
+    // console.log(profesor1.genero);
+    // console.log(profesor1.intereses);
+    // console.log(profesor1.materia);
+    // profesor1.despedida();
 
     console.log("-----profesor2--------");
 
     let profesor2 = new Profesor('Maria', 'Hurtado', 22, 'femenino', ['cine', 'teologia', 'trotar'], 'Historia Religiosa');
-    profesor2.saludo();
-    console.log(profesor2 instanceof Profesor);
-    console.log(profesor2.nombre.nombrePila);
-    console.log(profesor2.nombre.apellido);
-    console.log(profesor2.edad);
-    console.log(profesor2.genero);
-    console.log(profesor2.intereses);
-    profesor2.despedida();
+    // profesor2.saludo();
+    // console.log(profesor2 instanceof Profesor);
+    // console.log(profesor2.nombre.nombrePila);
+    // console.log(profesor2.nombre.apellido);
+    // console.log(profesor2.edad);
+    // console.log(profesor2.genero);
+    // console.log(profesor2.intereses);
+    // profesor2.despedida();
 
 }
 
@@ -122,9 +139,9 @@
 
     let ana = new Persona('Ana', 'Hurtado', 32, 'femenino', ['cine', 'teologia', 'Spining'], 'Historia Religiosa');
 
-    pedro.saludo();
-    pedro.despedida();
-    pedro.myThisEs();
+    // pedro.saludo();
+    // pedro.despedida();
+    // pedro.myThisEs();
 
 
     console.log("----Herencia con sintaxis de clase----");
@@ -176,29 +193,29 @@
     console.log("-----profesor3--------");
     let profesor3 = new Profesor('Marcos', 'Molina', 50, 'masculino', ['cine', 'tecnología', 'Spining'], 'Matemáticas');
 
-    profesor3.saludo();
-    console.log(profesor3 instanceof Profesor);
-    console.log(profesor3.nombre.nombrePila);
-    console.log(profesor3.nombre.apellido);
-    console.log(profesor3.edad);
-    console.log(profesor3.genero);
-    console.log(profesor3.intereses);
-    console.log(profesor3.materia);
-    profesor3.despedida();
-    profesor3.myThisEs();
+    // profesor3.saludo();
+    // console.log(profesor3 instanceof Profesor);
+    // console.log(profesor3.nombre.nombrePila);
+    // console.log(profesor3.nombre.apellido);
+    // console.log(profesor3.edad);
+    // console.log(profesor3.genero);
+    // console.log(profesor3.intereses);
+    // console.log(profesor3.materia);
+    // profesor3.despedida();
+    // profesor3.myThisEs();
 
 
     console.log("-----profesor4--------");
     let profesor4 = new Profesor('Sonia', 'Rodriguez', 42, 'femenino', ['cine', 'teologia', 'Spining'], 'Historia Religiosa');
-
-    profesor4.saludo();
-    console.log(profesor4 instanceof Profesor);
-    console.log(profesor4.nombre.nombrePila);
-    console.log(profesor4.nombre.apellido);
-    console.log(profesor4.edad);
-    console.log(profesor4.genero);
-    console.log(profesor4.intereses);
-    profesor4.despedida();
+    // 
+    //     profesor4.saludo();
+    //     console.log(profesor4 instanceof Profesor);
+    //     console.log(profesor4.nombre.nombrePila);
+    //     console.log(profesor4.nombre.apellido);
+    //     console.log(profesor4.edad);
+    //     console.log(profesor4.genero);
+    //     console.log(profesor4.intereses);
+    //     profesor4.despedida();
 
 
 
